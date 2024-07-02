@@ -1,0 +1,40 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "price": 100
+        },
+        {
+            "id": 2,
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "price": 200
+        },
+        {
+            "id": 3,
+            "title": "The Hitchhiker's Guide to the Galaxy",
+            "author": "Douglas Adams",
+            "price": 300
+        },
+        {
+            "id": 4,
+            "title": "The Lord of the Rings",
+            "author": "J.R.R. Tolkien",
+            "price": 400
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "johndoe@example.com"
+        },
+        {
+            "id": 2,
+            "name": "ulker",
+            "email": "ulker@example.com"
+        }
+    ]
+}
