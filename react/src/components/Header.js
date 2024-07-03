@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 const Header = () => {
   const { error } = useSelector(state => state.books)
 
-  console.log(error);
   return (
 
     <>
