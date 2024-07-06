@@ -10,6 +10,8 @@ import { getBooks } from "../../redux/slices/bookSlice"
 
 const PostContainer = () => {
 
+  const { isLogged } = useSelector(state => state.auth)
+
   const { books, isLoading } = useSelector(state => state.books)
   const dispatch = useDispatch();
   useEffect(() => {
@@ -23,7 +25,7 @@ const PostContainer = () => {
       <hr className='my-5' />
       <div className='row'>
         <div className='col'>
-          <BooksList isLoading={isLoading} books={books} />
+          <BooksList isLoading={isLoading} books={books} isLogged={isLogged} />
         </div>
         <div className='col side-line'>
           <BookInfo />

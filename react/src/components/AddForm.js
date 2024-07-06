@@ -1,8 +1,12 @@
 import React, { useRef } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { insertBook } from '../redux/slices/bookSlice';
 
 const Addform = () => {
+
+  const { isLogged } = useSelector(state => state.auth)
+
+
 
   // refs
   const title = useRef(null);
@@ -57,7 +61,7 @@ const Addform = () => {
               ref={description}
             ></textarea>
           </div>
-          <button type='submit' className='btn btn-primary'>
+          <button type='submit' className='btn btn-primary' disabled={!isLogged}>
             Submit
           </button>
         </form>
