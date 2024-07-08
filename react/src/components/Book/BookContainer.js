@@ -5,7 +5,7 @@ import BooksList from './BooksList';
 import './book.css';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { getBooks } from "../../redux/slices/bookSlice"
+import { getBooks, deleteBook } from "../../redux/slices/bookSlice"
 
 
 const PostContainer = () => {
@@ -25,7 +25,7 @@ const PostContainer = () => {
       <hr className='my-5' />
       <div className='row'>
         <div className='col'>
-          <BooksList isLoading={isLoading} books={books} isLogged={isLogged} />
+          <BooksList isLoading={isLoading} books={books} isLogged={isLogged} deleteBook={deleteBook} />
         </div>
         <div className='col side-line'>
           <BookInfo />
